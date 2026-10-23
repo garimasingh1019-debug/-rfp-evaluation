@@ -1,0 +1,473 @@
+{
+  "rfp_run_id": "RFP-20261023-115736-558BD2",
+  "created_at": "2026-10-23T11:57:36+00:00",
+  "status": "completed",
+  "llm": {
+    "mode": "demo",
+    "model": "keyword-demo-scorer"
+  },
+  "criteria": [
+    {
+      "criterion_id": 1,
+      "name": "Technical Capability",
+      "description": "Architecture, integrations, scalability, technical fit",
+      "weight": 30.0,
+      "max_score": 10.0
+    },
+    {
+      "criterion_id": 2,
+      "name": "Implementation Plan",
+      "description": "Timeline, milestones, staffing, risk plan",
+      "weight": 20.0,
+      "max_score": 10.0
+    },
+    {
+      "criterion_id": 3,
+      "name": "Commercial Value",
+      "description": "Pricing clarity, total cost, assumptions",
+      "weight": 20.0,
+      "max_score": 10.0
+    },
+    {
+      "criterion_id": 4,
+      "name": "Security & Compliance",
+      "description": "Controls, certifications, privacy, auditability",
+      "weight": 20.0,
+      "max_score": 10.0
+    },
+    {
+      "criterion_id": 5,
+      "name": "Support & Experience",
+      "description": "Support model, similar projects, references",
+      "weight": 10.0,
+      "max_score": 10.0
+    }
+  ],
+  "formulas": {
+    "absolute_score": "sum(score / max_score x weight_fraction) x 100",
+    "benchmark": "highest valid score for the criterion across all suppliers",
+    "gap": "score - benchmark (0 for the leader, otherwise negative)",
+    "relative_pct": "score / benchmark x 100 (100 when benchmark is 0)",
+    "ppi": "weighted average of criterion relative percentages",
+    "tie_break": "higher PPI > earlier submission date > higher experience rating > name A-Z"
+  },
+  "benchmarks": {
+    "1": 10.0,
+    "2": 10.0,
+    "3": 10.0,
+    "4": 10.0,
+    "5": 8.9
+  },
+  "tie_break_explanation": [
+    "No ties on PPI; the ranking was decided by PPI alone."
+  ],
+  "warnings": [],
+  "suppliers": [
+    {
+      "supplier_name": "Apex Systems",
+      "submission_date": "2026-03-02",
+      "experience_rating": 8.0,
+      "source_file": "Apex_Systems_RFP_Response.pdf",
+      "absolute_score": 96.6,
+      "ppi": 97.4157,
+      "criteria_detail": [
+        {
+          "criterion_id": 1,
+          "criterion": "Technical Capability",
+          "weight": 30.0,
+          "weight_fraction": 0.3,
+          "max_score": 10.0,
+          "score": 10.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 30.0,
+          "justification": "[DEMO] 10 relevant indicators found in the document.",
+          "evidence": "Response to RFP-2026-017: Cloud Procurement & Supplier Management Platform for Meridian Manufacturing",
+          "flag": ""
+        },
+        {
+          "criterion_id": 2,
+          "criterion": "Implementation Plan",
+          "weight": 20.0,
+          "weight_fraction": 0.2,
+          "max_score": 10.0,
+          "score": 10.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 20.0,
+          "justification": "[DEMO] 9 relevant indicators found in the document.",
+          "evidence": "FICTIONAL document for training use.",
+          "flag": ""
+        },
+        {
+          "criterion_id": 3,
+          "criterion": "Commercial Value",
+          "weight": 20.0,
+          "weight_fraction": 0.2,
+          "max_score": 10.0,
+          "score": 10.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 20.0,
+          "justification": "[DEMO] 9 relevant indicators found in the document.",
+          "evidence": "Price and Assumptions",
+          "flag": ""
+        },
+        {
+          "criterion_id": 4,
+          "criterion": "Security & Compliance",
+          "weight": 20.0,
+          "weight_fraction": 0.2,
+          "max_score": 10.0,
+          "score": 10.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 20.0,
+          "justification": "[DEMO] 11 relevant indicators found in the document.",
+          "evidence": "Certified connectors for SAP S/4HANA and Microsoft Dynamics 365, SSO",
+          "flag": ""
+        },
+        {
+          "criterion_id": 5,
+          "criterion": "Support & Experience",
+          "weight": 10.0,
+          "weight_fraction": 0.1,
+          "max_score": 10.0,
+          "score": 6.6,
+          "benchmark": 8.9,
+          "gap": -2.3,
+          "relative_pct": 74.1573,
+          "weighted_points": 6.6,
+          "justification": "[DEMO] 4 relevant indicators found in the document.",
+          "evidence": "Licence, years 1-3",
+          "flag": ""
+        }
+      ],
+      "risks": [
+        "[DEMO] Risks are not analysed in demo mode."
+      ],
+      "overall_summary": "[DEMO] Keyword-based score; not an AI assessment.",
+      "evaluation_status": "ok",
+      "warnings": [],
+      "rank": 1,
+      "rank_reason": "Highest PPI."
+    },
+    {
+      "supplier_name": "NexaWorks",
+      "submission_date": "2026-03-04",
+      "experience_rating": 7.0,
+      "source_file": "NexaWorks_RFP_Response.pdf",
+      "absolute_score": 94.4,
+      "ppi": 95.3517,
+      "criteria_detail": [
+        {
+          "criterion_id": 1,
+          "criterion": "Technical Capability",
+          "weight": 30.0,
+          "weight_fraction": 0.3,
+          "max_score": 10.0,
+          "score": 8.9,
+          "benchmark": 10.0,
+          "gap": -1.1,
+          "relative_pct": 89.0,
+          "weighted_points": 26.7,
+          "justification": "[DEMO] 6 relevant indicators found in the document.",
+          "evidence": "Response to RFP-2026-017: Cloud Procurement & Supplier Management Platform for Meridian Manufacturing",
+          "flag": ""
+        },
+        {
+          "criterion_id": 2,
+          "criterion": "Implementation Plan",
+          "weight": 20.0,
+          "weight_fraction": 0.2,
+          "max_score": 10.0,
+          "score": 10.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 20.0,
+          "justification": "[DEMO] 9 relevant indicators found in the document.",
+          "evidence": "FICTIONAL document for training use.",
+          "flag": ""
+        },
+        {
+          "criterion_id": 3,
+          "criterion": "Commercial Value",
+          "weight": 20.0,
+          "weight_fraction": 0.2,
+          "max_score": 10.0,
+          "score": 10.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 20.0,
+          "justification": "[DEMO] 8 relevant indicators found in the document.",
+          "evidence": "Weekly steering reports and a shared risk register are included.",
+          "flag": ""
+        },
+        {
+          "criterion_id": 4,
+          "criterion": "Security & Compliance",
+          "weight": 20.0,
+          "weight_fraction": 0.2,
+          "max_score": 10.0,
+          "score": 10.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 20.0,
+          "justification": "[DEMO] 9 relevant indicators found in the document.",
+          "evidence": "Security, Compliance and Risk Controls",
+          "flag": ""
+        },
+        {
+          "criterion_id": 5,
+          "criterion": "Support & Experience",
+          "weight": 10.0,
+          "weight_fraction": 0.1,
+          "max_score": 10.0,
+          "score": 7.7,
+          "benchmark": 8.9,
+          "gap": -1.2,
+          "relative_pct": 86.5169,
+          "weighted_points": 7.7,
+          "justification": "[DEMO] 5 relevant indicators found in the document.",
+          "evidence": "platform, a detailed delivery plan and a support model designed around plant operations.",
+          "flag": ""
+        }
+      ],
+      "risks": [
+        "[DEMO] Risks are not analysed in demo mode."
+      ],
+      "overall_summary": "[DEMO] Keyword-based score; not an AI assessment.",
+      "evaluation_status": "ok",
+      "warnings": [],
+      "rank": 2,
+      "rank_reason": "Lower PPI than rank 1 (95.35 vs 97.42)."
+    },
+    {
+      "supplier_name": "BrightPath Tech",
+      "submission_date": "2026-03-05",
+      "experience_rating": 4.0,
+      "source_file": "BrightPath_Tech_RFP_Response.pdf",
+      "absolute_score": 78.4,
+      "ppi": 79.0674,
+      "criteria_detail": [
+        {
+          "criterion_id": 1,
+          "criterion": "Technical Capability",
+          "weight": 30.0,
+          "weight_fraction": 0.3,
+          "max_score": 10.0,
+          "score": 6.6,
+          "benchmark": 10.0,
+          "gap": -3.4,
+          "relative_pct": 66.0,
+          "weighted_points": 19.8,
+          "justification": "[DEMO] 4 relevant indicators found in the document.",
+          "evidence": "Response to RFP-2026-017: Cloud Procurement & Supplier Management Platform for Meridian Manufacturing",
+          "flag": ""
+        },
+        {
+          "criterion_id": 2,
+          "criterion": "Implementation Plan",
+          "weight": 20.0,
+          "weight_fraction": 0.2,
+          "max_score": 10.0,
+          "score": 8.9,
+          "benchmark": 10.0,
+          "gap": -1.1,
+          "relative_pct": 89.0,
+          "weighted_points": 17.8,
+          "justification": "[DEMO] 6 relevant indicators found in the document.",
+          "evidence": "FICTIONAL document for training use.",
+          "flag": ""
+        },
+        {
+          "criterion_id": 3,
+          "criterion": "Commercial Value",
+          "weight": 20.0,
+          "weight_fraction": 0.2,
+          "max_score": 10.0,
+          "score": 10.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 20.0,
+          "justification": "[DEMO] 7 relevant indicators found in the document.",
+          "evidence": "BrightPath Tech offers Meridian a ready-to-use procurement platform at the lowest price in",
+          "flag": ""
+        },
+        {
+          "criterion_id": 4,
+          "criterion": "Security & Compliance",
+          "weight": 20.0,
+          "weight_fraction": 0.2,
+          "max_score": 10.0,
+          "score": 7.7,
+          "benchmark": 10.0,
+          "gap": -2.3,
+          "relative_pct": 77.0,
+          "weighted_points": 15.4,
+          "justification": "[DEMO] 5 relevant indicators found in the document.",
+          "evidence": "Security, Compliance and Risk Controls",
+          "flag": ""
+        },
+        {
+          "criterion_id": 5,
+          "criterion": "Support & Experience",
+          "weight": 10.0,
+          "weight_fraction": 0.1,
+          "max_score": 10.0,
+          "score": 5.4,
+          "benchmark": 8.9,
+          "gap": -3.5,
+          "relative_pct": 60.6742,
+          "weighted_points": 5.4,
+          "justification": "[DEMO] 3 relevant indicators found in the document.",
+          "evidence": "Licence, years 1-3",
+          "flag": ""
+        }
+      ],
+      "risks": [
+        "[DEMO] Risks are not analysed in demo mode."
+      ],
+      "overall_summary": "[DEMO] Keyword-based score; not an AI assessment.",
+      "evaluation_status": "ok",
+      "warnings": [],
+      "rank": 3,
+      "rank_reason": "Lower PPI than rank 2 (79.07 vs 95.35)."
+    },
+    {
+      "supplier_name": "Orbit Digital",
+      "submission_date": "2026-03-01",
+      "experience_rating": 9.0,
+      "source_file": "Orbit_Digital_RFP_Response.pdf",
+      "absolute_score": 73.9,
+      "ppi": 75.0,
+      "criteria_detail": [
+        {
+          "criterion_id": 1,
+          "criterion": "Technical Capability",
+          "weight": 30.0,
+          "weight_fraction": 0.3,
+          "max_score": 10.0,
+          "score": 5.4,
+          "benchmark": 10.0,
+          "gap": -4.6,
+          "relative_pct": 54.0,
+          "weighted_points": 16.2,
+          "justification": "[DEMO] 3 relevant indicators found in the document.",
+          "evidence": "Response to RFP-2026-017: Cloud Procurement & Supplier Management Platform for Meridian Manufacturing",
+          "flag": ""
+        },
+        {
+          "criterion_id": 2,
+          "criterion": "Implementation Plan",
+          "weight": 20.0,
+          "weight_fraction": 0.2,
+          "max_score": 10.0,
+          "score": 8.9,
+          "benchmark": 10.0,
+          "gap": -1.1,
+          "relative_pct": 89.0,
+          "weighted_points": 17.8,
+          "justification": "[DEMO] 6 relevant indicators found in the document.",
+          "evidence": "FICTIONAL document for training use.",
+          "flag": ""
+        },
+        {
+          "criterion_id": 3,
+          "criterion": "Commercial Value",
+          "weight": 20.0,
+          "weight_fraction": 0.2,
+          "max_score": 10.0,
+          "score": 8.9,
+          "benchmark": 10.0,
+          "gap": -1.1,
+          "relative_pct": 89.0,
+          "weighted_points": 17.8,
+          "justification": "[DEMO] 6 relevant indicators found in the document.",
+          "evidence": "Price and Assumptions",
+          "flag": ""
+        },
+        {
+          "criterion_id": 4,
+          "criterion": "Security & Compliance",
+          "weight": 20.0,
+          "weight_fraction": 0.2,
+          "max_score": 10.0,
+          "score": 6.6,
+          "benchmark": 10.0,
+          "gap": -3.4,
+          "relative_pct": 66.0,
+          "weighted_points": 13.2,
+          "justification": "[DEMO] 4 relevant indicators found in the document.",
+          "evidence": "Security, Compliance and Risk Controls",
+          "flag": ""
+        },
+        {
+          "criterion_id": 5,
+          "criterion": "Support & Experience",
+          "weight": 10.0,
+          "weight_fraction": 0.1,
+          "max_score": 10.0,
+          "score": 8.9,
+          "benchmark": 8.9,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "weighted_points": 8.9,
+          "justification": "[DEMO] 6 relevant indicators found in the document.",
+          "evidence": "Fifteen years of procurement transformation",
+          "flag": ""
+        }
+      ],
+      "risks": [
+        "[DEMO] Risks are not analysed in demo mode."
+      ],
+      "overall_summary": "[DEMO] Keyword-based score; not an AI assessment.",
+      "evaluation_status": "ok",
+      "warnings": [],
+      "rank": 4,
+      "rank_reason": "Lower PPI than rank 3 (75.00 vs 79.07)."
+    }
+  ],
+  "leaderboard": [
+    {
+      "rank": 1,
+      "supplier_name": "Apex Systems",
+      "absolute_score": 96.6,
+      "ppi": 97.4157,
+      "submission_date": "2026-03-02",
+      "experience_rating": 8.0
+    },
+    {
+      "rank": 2,
+      "supplier_name": "NexaWorks",
+      "absolute_score": 94.4,
+      "ppi": 95.3517,
+      "submission_date": "2026-03-04",
+      "experience_rating": 7.0
+    },
+    {
+      "rank": 3,
+      "supplier_name": "BrightPath Tech",
+      "absolute_score": 78.4,
+      "ppi": 79.0674,
+      "submission_date": "2026-03-05",
+      "experience_rating": 4.0
+    },
+    {
+      "rank": 4,
+      "supplier_name": "Orbit Digital",
+      "absolute_score": 73.9,
+      "ppi": 75.0,
+      "submission_date": "2026-03-01",
+      "experience_rating": 9.0
+    }
+  ]
+}

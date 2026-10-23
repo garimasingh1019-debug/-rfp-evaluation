@@ -1,0 +1,5 @@
+streamlit>=1.40,<1.50
+openai>=1.40
+pypdf>=4.0
+pandas>=2.0
+reportlab>=4.0
